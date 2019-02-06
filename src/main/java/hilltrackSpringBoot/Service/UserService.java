@@ -1,7 +1,8 @@
 package hilltrackSpringBoot.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import hilltrackSpringBoot.DBM.UserDbm;
+import hilltrackSpringBoot.DBM.UserDB;
 import hilltrackSpringBoot.Model.User;
 import java.util.Collection;
 
@@ -9,7 +10,8 @@ import java.util.Collection;
 public class UserService {
 	
 	@Autowired
-	private UserDbm userDbm;
+	@Qualifier("mongoDB")
+	private UserDB userDbm;
 	
 	public Collection<User> getAllUsers(){
 		return this.userDbm.getAllUsers();
