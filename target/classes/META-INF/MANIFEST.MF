@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: HillTrackSpringBoot
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: hajct
+Implementation-Vendor-Id: com.hilltrack
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/hilltrackSpringBoot
+Created-By: Maven Integration for Eclipse
+
